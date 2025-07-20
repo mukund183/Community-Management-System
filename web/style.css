@@ -429,6 +429,23 @@ body {
     text-align: center;
 }
 
+.button {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 125%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 .dropdown-toggle {
     background-color: #fff;
     /* Background color */
@@ -861,4 +878,212 @@ body {
     border-radius: 5px;
     z-index: 999;
     
+}/* Add your existing CSS styles here */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
+
+.menu {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 0 0 250px;
+}
+
+.menu-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.main-content {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    max-width: calc(100% - 250px); /* Adjusted to account for menu width */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group input[type="tel"],
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-group select {
+    appearance: none; /* Remove default arrow */
+    padding-right: 30px; /* Add space for custom arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 9 12 15 18 9"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.input-group button[type="submit"] {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-group button[type="submit"]:hover {
+    background-color: #000;
+}
+
+/* Additional CSS for the form inputs */
+.flat-input {
+    flex: 1; /* Let the input take up remaining space */
+    padding: 8px; /* Adjust padding as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.dropdown-toggle {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    width: 200px;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 0;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    color: #333;
+    background-color: #f0f0f0;
+}
+.main-content form {
+    max-width: 400px; /* Increase the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 15px; /* Decrease the padding of the form */
+}
+
+.input-group {
+    margin-bottom: 10px; /* Decrease the margin between input groups */
+}
+
+.input-group label {
+    width: 120px; /* Increase the width of the labels */
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group input[type="tel"],
+.input-group select {
+    width: calc(100% - 130px); /* Calculate the width of the input fields */
+    padding: 8px; /* Decrease the padding of the input fields */
+}
+
+.input-group select {
+    padding-right: 35px; /* Adjust the padding to accommodate the dropdown arrow */
+}
+
+.input-group button[type="submit"] {
+    padding: 8px 20px; /* Decrease the padding of the submit button */
+}
+
+/* Style for table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style for table headers */
+  .table th {
+    padding: 12px 15px;
+    text-align: left;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style for table rows */
+  .table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style for alternate table rows */
+  .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect for table rows */
+  .table tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
