@@ -1,0 +1,1041 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #dfdfdf;
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 440px;
+    height: 480px;
+    padding: 30px;
+}
+
+.login-header {
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.login-header header {
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.input-box .input-field {
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.05);
+    outline: none;
+    transition: .3s;
+}
+
+::placeholder {
+    font-weight: 500;
+    color: #222;
+}
+
+.input-field:focus {
+    width: 105%;
+}
+
+.forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+#check {
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section a {
+    color: #555;
+}
+
+.input-submit {
+    position: relative;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 60px;
+    background: #222;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.input-submit label {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #000;
+    transform: scale(1.05, 1);
+}
+
+.sign-up-link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.sign-up-link a {
+    color: #000;
+    font-weight: 600;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #dfdfdf;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.menu {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    /* Set width of menu to 1/3 of the container */
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 500px;
+    /* Add margin to create space */
+}
+
+.main-content {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    flex: 2;
+    /* Set width of main content to 2/3 of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    margin-left: 20px;
+    /* Add margin to create space */
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-bottom: 3px;
+    height: 500px;
+    /* Set a fixed height for the main content */
+    overflow: auto;
+    /* Add overflow auto to enable scrolling if content exceeds height */
+}
+
+
+.menu-header {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200%;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    /* Ensure menu fills its height */
+}
+
+.menu ul li {
+    flex: 1;
+    /* Each button takes equal space */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.info-box {
+    width: 100%;
+    height: 400px;
+    /* Fixed height for demonstration */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-box h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.logout-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logout-btn button {
+    background: #222;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.logout-btn button:hover {
+    background: #000;
+}
+
+/* Input box styles */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+}
+
+#Label {
+    align-items: center;
+    margin-left: 25%;
+}
+
+/* Button styles */
+#visitor-form button {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 25%;
+    font-size: 125%;
+    margin-top: 20px;
+
+}
+
+#visitor-form button:hover {
+    background-color: #000;
+}
+
+#box2 {
+    padding-left: 50%;
+    float: right;
+
+}
+
+#Av {
+    align-items: center;
+    color: #333;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 50%;
+    margin-left: 10px;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+#box1 {
+    padding-right: 50%;
+    border-top-right-radius: 1px solid #000;
+    float: left;
+
+}
+
+#Vv {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 25%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: large;
+
+}
+
+/* Add your existing CSS styles here */
+
+/* Add your existing CSS styles here */
+
+.btn-group {
+    display: inline-block;
+    position: relative;
+    align-content: center;
+    margin-left: 350px;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+
+}
+
+.btn-secondary:focus {
+    outline: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    /* Adjust to your preference */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    width: 200px;
+    /* Adjust to your preference */
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 0;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.submit1-button {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 125%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dropdown-toggle {
+    background-color: #fff;
+    /* Background color */
+    color: #333;
+    /* Text color */
+    padding: 20px 20px;
+    /* Padding for the toggle */
+    border: 1px solid #ccc;
+    /* Border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Cursor style */
+    font-family: 'Poppins', sans-serif;
+    /* Font family */
+    font-size: 16px;
+    /* Font size */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    /* Smooth transitions */
+    margin-top: 125px;
+    /* Push dropdown to the bottom */
+    margin-bottom: 100px;
+    /* Push dropdown to the bottom */
+}
+
+
+.dropdown-toggle:hover {
+    background-color: #f0f0f0;
+    /* Background color on hover */
+    color: #000;
+    /* Text color on hover */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #dfdfdf;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* Stretch both menu and main content */
+    align-items: stretch;
+    /* Stretch both menu and main content */
+    width: 100%;
+    max-width: 1200px;
+}
+
+.menu {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    flex: 0 0 250px;
+    /* Set width of menu */
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.menu-header {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.main-content {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    /* Fill remaining space */
+    padding: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.g-col-4 {
+    flex: 1;
+    /* Each column takes equal space */
+    margin: 10px;
+}
+
+.g-col-4 label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.g-col-4 input[type="date"],
+.g-col-4 select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.menu {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.menu-header {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.main-content {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-bottom: 3px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.g-col-4 {
+    flex: 1 0 33.33%;
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #000;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menu {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 0 0 250px;
+}
+
+.menu-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.main-content {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.g-col-6 {
+    flex: 1 0 50%;
+    padding: 10px;
+}
+
+.bill-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #222;
+    /* Updated color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    /* Added margin */
+    margin-right: 15px;
+    margin-left: 15px
+}
+
+.bill-button:last-child {
+    margin-bottom: 0;
+    /* Remove bottom margin from the last button */
+}
+
+.bill-button:hover {
+    background-color: #000;
+    /* Updated hover color */
+}
+
+/* Add your CSS styles here */
+/* Updated CSS */
+.tower-flat-container .btn-group {
+    float: left;
+}
+
+.submit1-button {
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 50px;
+
+}
+
+.input-group input[type="text"] {
+    width: 50%;
+    /* Adjust the width as needed */
+    padding: 10px;
+    /* Adjust the padding as needed */
+}
+
+
+.dropdown-2 {
+    margin-bottom: 20px;
+}
+
+.dropdown-toggle {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    width: 200px;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 0;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.submit1-button {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 125%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.input-group {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.input-group label {
+    margin-right: 10px;
+    margin-bottom: 150px; /* Add some space between label and input */
+}
+
+.flat-input {
+    flex: 1; /* Let the input take up remaining space */
+    padding: 8px; /* Adjust padding as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 999;
+    
+}/* Add your existing CSS styles here */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menu {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 0 0 250px;
+}
+
+.menu-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.main-content {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    max-width: calc(100% - 250px); /* Adjusted to account for menu width */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group input[type="tel"],
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-group select {
+    appearance: none; /* Remove default arrow */
+    padding-right: 30px; /* Add space for custom arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 9 12 15 18 9"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.input-group button[type="submit"] {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-group button[type="submit"]:hover {
+    background-color: #000;
+}
+
+/* Additional CSS for the form inputs */
+.flat-input {
+    flex: 1; /* Let the input take up remaining space */
+    padding: 8px; /* Adjust padding as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.dropdown-toggle {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    width: 200px;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 0;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    color: #333;
+    background-color: #f0f0f0;
+}
+.main-content form {
+    max-width: 400px; /* Increase the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 15px; /* Decrease the padding of the form */
+}
+
+.input-group {
+    margin-bottom: 10px; /* Decrease the margin between input groups */
+}
+
+.input-group label {
+    width: 120px; /* Increase the width of the labels */
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group input[type="tel"],
+.input-group select {
+    width: calc(100% - 130px); /* Calculate the width of the input fields */
+    padding: 8px; /* Decrease the padding of the input fields */
+}
+
+.input-group select {
+    padding-right: 35px; /* Adjust the padding to accommodate the dropdown arrow */
+}
+
+.input-group button[type="submit"] {
+    padding: 8px 20px; /* Decrease the padding of the submit button */
+}
+
