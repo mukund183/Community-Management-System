@@ -52,9 +52,15 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
+<<<<<<< HEAD
 /*!50003 CREATE*/ /*!50017 DEFINER=`debian-sys-maint`@`localhost`*/ /*!50003 TRIGGER `pastvisitors_entry` AFTER DELETE ON `activevisitors` FOR EACH ROW BEGIN
     INSERT INTO pastvisitors (flatno, towerno, visname, visdate, otp)
     VALUES (OLD.flatno, OLD.towerno, OLD.visname, OLD.visdate, OLD.otp);
+=======
+/*!50003 CREATE*/ /*!50017 DEFINER=`debian-sys-maint`@`localhost`*/ /*!50003 TRIGGER `pastvisitors_entry` AFTER DELETE ON `activevisitors` FOR EACH ROW BEGIN
+    INSERT INTO pastvisitors (flatno, towerno, visname, visdate, otp)
+    VALUES (OLD.flatno, OLD.towerno, OLD.visname, OLD.visdate, OLD.otp);
+>>>>>>> 0fd48846902ec4c921d35fa84afb58446b1780b8
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -126,9 +132,15 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
+<<<<<<< HEAD
 /*!50003 CREATE*/ /*!50017 DEFINER=`debian-sys-maint`@`localhost`*/ /*!50003 TRIGGER `complaints_trigger` AFTER DELETE ON `complaints` FOR EACH ROW BEGIN
     INSERT INTO pastcomplaints (flatno, towerno, place, timeslot, problem, timeofresolution)
     VALUES (OLD.flatno, OLD.towerno, OLD.place, OLD.timeslot, OLD.problem, NOW());
+=======
+/*!50003 CREATE*/ /*!50017 DEFINER=`debian-sys-maint`@`localhost`*/ /*!50003 TRIGGER `complaints_trigger` AFTER DELETE ON `complaints` FOR EACH ROW BEGIN
+    INSERT INTO pastcomplaints (flatno, towerno, place, timeslot, problem, timeofresolution)
+    VALUES (OLD.flatno, OLD.towerno, OLD.place, OLD.timeslot, OLD.problem, NOW());
+>>>>>>> 0fd48846902ec4c921d35fa84afb58446b1780b8
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -406,9 +418,15 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
+<<<<<<< HEAD
 /*!50003 CREATE*/ /*!50017 DEFINER=`debian-sys-maint`@`localhost`*/ /*!50003 TRIGGER `passcode_trigger` AFTER DELETE ON `passcodes` FOR EACH ROW BEGIN
     INSERT INTO activevisitors (flatno, towerno, visname, visdate, otp)
     VALUES (OLD.flatno, OLD.towerno, OLD.visiname, OLD.visidate, OLD.otp);
+=======
+/*!50003 CREATE*/ /*!50017 DEFINER=`debian-sys-maint`@`localhost`*/ /*!50003 TRIGGER `passcode_trigger` AFTER DELETE ON `passcodes` FOR EACH ROW BEGIN
+    INSERT INTO activevisitors (flatno, towerno, visname, visdate, otp)
+    VALUES (OLD.flatno, OLD.towerno, OLD.visiname, OLD.visidate, OLD.otp);
+>>>>>>> 0fd48846902ec4c921d35fa84afb58446b1780b8
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
